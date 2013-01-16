@@ -74,3 +74,19 @@ $data = $_POST["data"];
 $jSEND = new jSEND(); 
 $str = $jSEND->getData($data);
 ```
+
+## About jSEND
+
+### Author
+
+jSEND was created and is currently maintained by Michael Kortstiege - a web developer from near Hanover, Germany.
+
+His main fields of occupation and some of his personal interests are web-based applications, web usability and social media issues (both, pros and cons ;-).
+
+»A short statement from him: **code is poetry** - see Smashing Magazine and Wordpress - **but objects are the beat.**«
+
+### Credits
+
+* Lempel-Ziv-Welch - developers of the LZW compression algorithm
+* Jakub Vrana http://php.vrana.cz/ - binary encoder/decoder, similar to PHP pack function
+* Jürgen Helbing http://www.yenc.org/ - the idea how to clever escape an encoded string
