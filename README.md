@@ -3,11 +3,11 @@
 ### Speed up response + increase UX* of your WebApps
 > UX is short for User eXperience ~ how a person feels about using your web site or application.
 
-** jSEND is a JavaScript cross browser component for jQuery.**
+**jSEND is a JavaScript cross browser component for jQuery.**
 
 It provides compression in combination with binary-to-text encoding and achieves significant, lossless information reduction for your data transfers - supporting all kinds of textual data: XML, stringified JSON Objects, (X)HTML, plain text... Test it now!
 
-** jSEND is intended for use in Web 2.0 and rich applications** - as invaluable supplement for post requests via the XMLHTTPRequest object (AJAX/AJAJ).
+**jSEND is intended for use in Web 2.0 and rich applications** - as invaluable supplement for post requests via the XMLHTTPRequest object (AJAX/AJAJ).
 
 This software is absolutely free. It's licensed same as jQuery – under the terms of either the MIT License or the GNU General Public License (GPL) Version 2.
 
