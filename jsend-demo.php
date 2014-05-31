@@ -20,7 +20,7 @@
 		Text Message ( <span id="msg-size"></span> chars )
 		<textarea class="form-control" rows="3" id='msg'></textarea>
 		<div class="text-center">
-			<button class="btn btn-sm btn-info" id='js-com-jsend'>Encrypted and Send to Server</button>
+			<button class="btn btn-sm btn-info" id='js-com-jsend'>Compress and Send to Server</button>
 		</div>
 	</div>
 
@@ -45,15 +45,15 @@ $(document).ready(function(){
 	$('#js-com-jsend').click(function(){
 
 		// compress it
-		var enc = $.jSEND($('#msg').val());
+		var com = $.jSEND($('#msg').val());
 
 		// show compress string
-		$('#js-com').val(enc);
+		$('#js-com').val(com);
 		countsize('#js-com');
 		// send to server
 		$.post(
 			'dec-jSEND.php',
-			{encrypted:enc},
+			{compress:com},
 			function(data){ 
 				//console.log(data);
 				$('#php-dec').val(data);
