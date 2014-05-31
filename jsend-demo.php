@@ -10,7 +10,7 @@
 <body>
 
 <style type="text/css">
-	textarea {height: 30%; margin-top: 10px; margin-bottom: 10px;}
+	textarea {margin-top: 10px; margin-bottom: 10px;}
 </style>
 
 <h1 class="text-center">jSEND Demo</h1>
