@@ -32,7 +32,9 @@ class jSEND
     /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
        DOUBLE DECODE & DECOMPRESS STRING(S)
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-    list($s1,$s2) = explode('==',$s); 
+    if(strpos($s, '==') !== false) list($s1,$s2) = explode('==',$s);
+    else { $s1 = $s; $sDataTmp2 = $s2 = false; }
+    
     $sDataTmp1 = self::decompressLZW(self::decodeBinary(self::decode847($s1)));
     if ($s2) 
       $sDataTmp2 = self::decompressLZW(self::decodeBinary(self::decode847($s2)));
